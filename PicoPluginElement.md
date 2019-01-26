@@ -1,12 +1,6 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)  
 
-## Installation
-
-1. Download the [Latest Release](http://github.com/Tyxiang/PicoElementPlugin/releases) on GitHub Releases.
-1. Extract folder `PicoElement` to your Pico plugins folder.
-1. Add a option `PicoElement.enabled: true` in `config.yml`.
-
 ## Usage
 
 In the .md file, wrap the content with a start tag and an end tag. Just like:
@@ -18,10 +12,6 @@ In the .md file, wrap the content with a start tag and an end tag. Just like:
 ```
 - xxx is the name of element. 
 - This theme requires jQuery, but it will load automatically.
-
-## Demo 
-
-[Demo](http://www.spring-ctrl.com)
 
 ## Elements
 
