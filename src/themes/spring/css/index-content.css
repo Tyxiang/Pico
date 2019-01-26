@@ -1,0 +1,176 @@
+/*** meta ***/
+.description {
+    padding: 0 0.5rem;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    font-style: italic;
+}
+/*** TYPOGRAPHY ***/
+p, td, th, li, dd {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+p, hr, table, .table-responsive, ol, ul, dl, pre, blockquote, fieldset {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    /* color: var(--color-gray-dark); */
+}
+h1 { font-size: 2.0rem; text-align: center; padding: 0.5em 0 0 0; }
+h2 { font-size: 1.5rem; }
+/* h2 { font-size: 1.5rem; border-bottom: 1px solid var(--color-gray-brighter);} */
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.0rem; }
+h5 { font-size: 1.0rem; }
+h6 { font-size: 1.0rem; font-weight: normal; font-style: italic; }
+
+hr {
+    height:1px; 
+    border:none;
+    border-top: 1px solid var(--color-gray-brighter);
+    margin-bottom: 2em;
+}
+
+abbr { text-decoration: underline dotted; }
+
+/*** TABLES ***/
+
+table { border-spacing: 0; }
+
+td, th {
+    padding: 0.2em 1em;
+    vertical-align: top;
+}
+th {
+    /* font-weight: normal; */
+    text-align: center;
+    background: var(--color-gray-brighter);
+    color: var(--color-gray-dark);
+}
+
+td, th { border: solid 1px var(--color-gray-bright); }
+tr:not(:last-child) td, tr:not(:last-child) th { border-bottom: 0 none; }
+thead tr:last-child th {                         border-bottom: 0 none; }
+td:not(:last-child), th:not(:last-child) {       border-right: 0 none; }
+
+/* 
+tr:first-child td:first-child, tr:first-child th:first-child { border-top-left-radius: 0.3em; }
+tr:first-child td:last-child, tr:first-child th:last-child {   border-top-right-radius: 0.3em; }
+tbody tr:last-child td:first-child {                           border-bottom-left-radius: 0.3em; }
+tbody tr:last-child td:last-child {                            border-bottom-right-radius: 0.3em; }
+table thead + tbody tr:first-child td {                        border-radius: 0 !important; } 
+*/
+
+.table-responsive { overflow-x: auto; }
+.table-responsive > table { margin-bottom: 0; }
+
+/*** LISTS ***/
+
+ol, ul {
+    list-style-position: outside;
+    padding-left: 1.5em;
+}
+
+li { padding-left: 0.5em; }
+
+dt { font-weight: bold; }
+dd { margin-left: 2em; }
+
+/*** CODE ***/
+
+code {
+    margin: 0 0.1em;
+    padding: 0 0.2em;
+    border: 1px solid var(--color-gray-bright);
+    border-radius: 0.2em;
+    background: var(--color-gray-brighter);
+    font-family: 'Droid Sans Mono', 'Courier New', 'Courier', monospace;
+    font-size: 0.9rem;
+}
+
+pre {
+    padding: 0 1em;
+    border: 1px solid var(--color-gray-bright);
+    border-radius: 0.2em;
+    background: var(--color-gray-brighter);
+    line-height: 1.4;
+}
+pre code {
+    display: block;
+    margin: 0;
+    padding: 1.1111em 0;
+    border: 0 none;
+    background: transparent;
+    overflow-x: auto;
+}
+
+/*** BLOCKQUOTE ***/
+
+blockquote {
+    font-style: italic;
+    padding-left: 0.5em;
+    border-left: 0.5em solid var(--color-gray-brighter);
+}
+
+/*** FORMS ***/
+
+label, fieldset legend { font-weight: bold; }
+
+input:not([type="checkbox"]):not([type="radio"]), button, select, textarea, fieldset, fieldset legend {
+    border: solid 1px var(--color-gray-bright);
+    border-radius: 0.3em;
+    background: var(--color-back);
+    -webkit-transition: none .2s ease-in;
+            transition: none .2s ease-in;
+    -webkit-transition-property: border-color, background, box-shadow;
+            transition-property: border-color, background, box-shadow;
+}
+
+input:not([type="checkbox"]):not([type="radio"]), button, select, textarea {
+    padding: 0.5em 1em;
+    outline: 0 none;
+    font-size: 1rem;
+}
+input:focus:not([type="checkbox"]):not([type="radio"]), button:focus, select:focus, textarea:focus {
+    border-color: var(--color-base);
+    box-shadow: 0 0 8px var(--color-base);
+}
+input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focus, button:focus,
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background: var(--color-gray-brighter);
+    cursor: pointer;
+}
+
+textarea, select[multiple] {
+    vertical-align: bottom;
+    overflow: auto;
+}
+
+fieldset {
+    padding: 1em;
+    background: var(--color-gray-brighter);
+}
+fieldset legend { padding: 0 0.5em; }
+
+fieldset label, fieldset input, fieldset button,
+fieldset select, fieldset textarea {
+    margin: 0.2em 0.5em;
+}
+fieldset label:first-child, fieldset input:first-child, fieldset button:first-child,
+fieldset select:first-child, fieldset textarea:first-child {
+    margin-left: 0;
+}
+fieldset label:last-child, fieldset input:last-child, fieldset button:last-child,
+fieldset select:last-child, fieldset textarea:last-child {
+    margin-right: 0;
+}
+
+/* Firefox input size fix */
+input::-moz-focus-inner, button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}

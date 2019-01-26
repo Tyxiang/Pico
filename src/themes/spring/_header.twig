@@ -1,0 +1,26 @@
+<header>
+    <div class="container">
+
+        <div id="logo">
+            <a href="{{ "index"|link }}">
+                <img src="{{ theme_url }}/logo/logo.png" alt='{{ site_title }}'></a>
+            </a>
+        </div>
+
+        <div class="nav" role="region" tabindex="-1">
+            <ul>
+                {% set current_channel = current_page.id|split('/')|first %}
+                {% for page in pages if page.title and page.meta.navigate == 'header' and not page.hidden %}
+                    {% set pageDepth = page.id|split('/')|length %}
+                    {% if (pageDepth == 2) and (page.id ends with "/index") or (pageDepth == 1) %}
+                        {% set this_channel = page.id|split('/')|first %}
+                        <li{% if this_channel == current_channel %} class="active"{% endif %}>
+                            <a href="{{ page.url }}">{{ page.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div> 
+
+    </div>
+</header>

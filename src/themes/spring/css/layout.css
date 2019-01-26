@@ -1,0 +1,161 @@
+/**
+ * A threme for Pico
+ *
+ * @author  Tyxiang
+ * @link    http://forw.cc
+ * @license http://opensource.org/licenses/MIT The MIT License
+ * @version 1.0
+ */
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    font-size: 16px; 
+}
+body {
+    font-family: 'Droid Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    color: var(--color-gray-darker);
+}
+
+a {
+    color: var(--color-base);
+    text-decoration: none;
+    -webkit-transition: color .2s ease-in;
+            transition: color .2s ease-in;
+}
+a:hover { 
+    color: var(--color-base-bright); 
+}
+
+.nav ul {
+    /* 解决导航偏右问题 */
+    padding: 0;
+    margin: 0;
+}
+.nav ul li {
+    display: inline-block;
+    padding: 0 0.3rem;
+}
+
+img { 
+    max-width: 100%; 
+}
+
+*/
+/* IE8 + IE9 clearfix */
+header > .container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*** basic ***/
+html{ 
+    height: 100%; 
+}
+body { 
+    display: flex; 
+    flex-direction: column;
+    height: 100%; 
+}
+.container {
+    overflow-x: auto;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+.widescreen .container { 
+    max-width: 72rem; 
+}
+/*** header ***/
+header { 
+    flex: 0 0 auto; 
+    background: var(--color-base);
+}
+header #logo {
+    float: left;
+    padding: 35px 0 35px;
+}
+
+header .nav {
+    float: right;
+    padding: 50px 0.35rem 0;
+}
+header .nav ul li {
+    font-weight: bold;
+}
+header .nav a {
+    color: var(--color-base-bright);
+}
+header .nav a:hover { 
+    color: var(--color-base-brighter);
+}
+header .nav .active a {
+    color: var(--color-back);
+}
+*/
+/* IE8 + IE9 clearfix */
+header > .container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*** subnav ***/
+.subnav {
+    text-align: center;
+    background: var(--color-base-bright);
+    color: var(--color-back);
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
+.subnav a {
+    color: var(--color-back);
+}
+.subnav a:hover { 
+    color: var(--color-base-brighter);
+}
+.subnav .active a {
+    font-weight: bold;
+}
+/*** main ***/
+#main {
+    flex: 1 0 auto;
+}
+/*** footer ***/
+footer {
+    /*首位必须为0，否则footer异常*/
+    flex: 0 0 auto; 
+    background: var(--color-base);
+    color: var(--color-base-brighter);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer a { 
+    color: var(--color-back);
+    /* 换行不断词 */
+    /* display: inline-block;  */
+}
+footer a:hover { 
+    color: var(--color-base-bright);
+}
+footer .nav .active a {
+    font-weight: bold;
+}
+footer p {
+    margin: 0.5rem 0;
+}
+footer i {
+    font-size: 1.3rem;
+}
+

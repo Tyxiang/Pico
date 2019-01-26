@@ -1,0 +1,44 @@
+.bright a{
+    color: var(--color-back);
+}
+.bright a:hover { 
+    color: var(--color-base-brighter); 
+}
+.dark a{
+    color: var(--color-base-darker);
+}
+.dark a:hover { 
+    color: var(--color-base); 
+}
+
+.banner {
+    width: 100%;
+}
+.banner .text {
+    position: absolute;
+}
+.banner img {
+    display: block; /* 内联元素，margin居中必须block */
+    margin:0 auto;
+}
+
+.card {
+    float: left;
+    /* width: calc(100% - 15px); */
+    margin: 0 15px 15px 0;
+    border: 1px solid #8f8f8f;
+    padding: 1.5rem 1.5rem 0;
+}
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+.card .link {
+    padding: 1rem 0;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}

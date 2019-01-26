@@ -1,0 +1,114 @@
+/* card-1 **********************************************/
+.pico-element.card-1{
+  float: left;
+  width: calc(100% - 15px);
+  margin: 0 15px 15px 0;
+  border: 1px solid #8f8f8f;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+.pico-element.card-1:hover {
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+}
+@media (max-width: 767px) {
+  .pico-element.card-1{
+    width: 100%;
+  }
+}
+/* card-2 **********************************************/
+.pico-element.card-2 {
+    float: left;
+    width: calc(50% - 15px);
+    margin: 0 15px 15px 0;
+    border: 1px solid #8f8f8f;
+    padding: 1.5rem 1.5rem 0.5rem;
+  }
+  .pico-element.card-2:hover {
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+  }
+  @media (max-width: 767px) {
+    .pico-element.card-2 {
+      width: 100%;
+    }
+  }
+/* card-3 **********************************************/
+  .pico-element.card-3{
+    float: left;
+    width: calc(33.3333% - 15px);
+    margin: 0 15px 15px 0;
+    border: 1px solid #8f8f8f;
+    padding: 1.5rem 1.5rem 0.5rem;
+    text-align: left;
+  }
+  .pico-element.card-3:hover {
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+  }
+  @media (max-width: 767px) {
+    .pico-element.card-3 {
+      width: 100%;
+    }
+  }
+/* toc **********************************************/
+.pico-element.toc-left{
+  padding: 20px 10px 10px 20px;
+  max-width: 16rem;
+  float: left;
+}
+.pico-element.toc-left-content{
+  padding: 20px 10px 10px 20px;
+  /* max-width: 46rem; */
+  width: calc(100% - 16rem - 30px);
+  float: left;
+}
+@media (max-width: 767px) {
+  .pico-element.toc-left-content {
+    width: 100%;
+  }
+}
+.pico-element.toc-top{
+  border: 1px solid rgb(145, 145, 145);
+  margin: 0 0 30px 0;
+  padding: 20px 10px 10px 20px;
+}
+/* centre-park **********************************************/
+.pico-element.centre-park{
+  text-align: center;
+}
+/* ordered-heading **********************************************/
+.pico-element.ordered-heading h2 {
+  counter-reset:c2;
+  counter-increment:c1;
+}
+.pico-element.ordered-heading h2:before {
+  content:counter(c1) ". ";
+}
+.pico-element.ordered-heading h2+h4 {
+  counter-reset:c3;
+}
+.pico-element.ordered-heading h3 {
+  counter-reset:c3;
+  counter-increment:c2;
+}
+.pico-element.ordered-heading h3:before {
+  content:counter(c1) "." counter(c2) " ";
+}
+.pico-element.ordered-heading h4 {
+  counter-reset:c4;
+  counter-increment:c3;
+  font-weight:normal;
+  font-size: 1em;
+  padding: 0;
+  margin : 0;
+}
+.pico-element.ordered-heading h4:before {
+  content:counter(c1) "." counter(c2) "." counter(c3) " ";
+}
+.pico-element.ordered-heading h5 {
+  counter-increment:c4;
+  font-weight:normal;
+  font-size: 1em;
+  padding: 0;
+  margin : 0;
+}
+.pico-element.ordered-heading h5:before {
+  content:counter(c1) "." counter(c2) "." counter(c3) "." counter(c4) " ";
+}

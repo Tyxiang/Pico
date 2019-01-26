@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    .nav {
+        text-align: center;
+        width: 100%;
+    }
+    /*** basic ***/
+    .container {
+        padding: 0 0.5rem;
+    }
+    header #logo {
+        text-align: center;
+        width: 100%;
+        padding: 1.5rem 0 0.8rem;
+        /* background: red; */
+    }
+    header #logo img{
+        width: 30%;
+    }
+    header .nav {
+        padding: 0 0.35rem 1rem;
+    }
+}

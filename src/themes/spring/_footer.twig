@@ -1,0 +1,24 @@
+<footer>
+
+    <div class="nav" role="region" tabindex="-1">
+        <ul>
+            {% set current_channel = current_page.id|split('/')|first %}
+            {% for page in pages if page.meta.navigate == 'footer' and not page.hidden %}
+                {% set pageDepth = page.id|split('/')|length %}
+                {% if (pageDepth == 2) and (page.id ends with "/index") or (pageDepth == 1) %}
+                    {% set this_channel = page.id|split('/')|first %}
+                    <li{% if this_channel == current_channel %} class="active"{% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div> 
+
+    <div class="container">
+        {{ pages._footer.id|content }}
+    </div>
+
+</footer>
+
+<script src='https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js' type='text/javascript'></script>
