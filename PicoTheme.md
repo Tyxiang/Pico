@@ -1,16 +1,6 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)  
 
-## Demo 
-
-[Demo](http://www.spring-ctrl.com)
-
-## Installation
-
-1. Download the [Latest Release](https://github.com/Tyxiang/PicoTheme/releases) on GitHub Releases.
-1. Extract `themes/forw` to your Pico themes folder.
-1. Edit `theme` option to `forw` in `config.yml`.
-
 ## Configuration 
 
 ### PNG Logo
