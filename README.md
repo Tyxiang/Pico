@@ -4,6 +4,6 @@
 
 ## Added component
 
-[PicoPluginElement](PicoPluginElement.md)  
-[PicoPluginRedirect](PicoPluginRedirect.md)  
-[PicoTheme](PicoTheme.md)  
+[PicoPluginElement](doc/PicoPluginElement.md)  
+[PicoPluginRedirect](doc/PicoPluginRedirect.md)  
+[PicoTheme](doc/PicoTheme.md)  
