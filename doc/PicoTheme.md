@@ -131,4 +131,4 @@ main:
 
 You can use the build-in icons directly in the .md file by the format like `<i class="icon name"></i>`.
 
-![icons](image/icons.png)
+All of Font Awesome v4.7.0 in http://fontello.com/ is supported.
