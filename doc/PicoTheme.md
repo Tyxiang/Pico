@@ -129,6 +129,6 @@ main:
 
 ### Built-in Icons
 
-You can use the build-in icons directly in the .md file by the format like `![i](image/icon name"></i>`.
+You can use the build-in icons directly in the .md file by the format like `<i class="icon name"></i>`.
 
 ![icons](image/icons.png)
