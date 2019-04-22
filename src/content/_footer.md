@@ -1,3 +1,8 @@
-Copyright © 2018 Beijing Spring Valve&System Co. Ltd. All rights reserved.
+[<i class="icon-github-circled"></i>](https://github.com/fimiks)
+[<i class="icon-wechat"></i>](%base_url%/wechat) 
+[<i class="icon-android"></i>](%base_url%/android) 
+<!-- [<i class="icon-apple"></i>](%base_url%/ios)  -->
 
-[www.spring-ctrl.com](http://www.spring-ctrl.com)
+Copyright © 2019 Fimik All rights reserved.
+
+[www.fimik.com](http://www.fimik.com)

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    {% include '_head.twig' %}
+    
+    <link rel="stylesheet" href="{{ theme_url }}/css/index-content.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/index-top.css" type="text/css" />
+</head>
+<body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+
+    {% include '_header.twig' %}
+
+    {# {% if (meta.subnav is not defined) or (meta.subnav == true) %} #}
+    {% if meta.navigate == 'header' %}
+        {% set subnav_items = [] %}
+        {% set current_page_name = current_page.id|split('/')|last %}
+        {% set current_parent_id = current_page.id|split('/')|slice(0, -1)|join('/') %}
+        {% if current_page_name != "index" and current_parent_id != "" %}
+            {% for page in pages if page.title and not page.hidden %}
+                {% set page_name = page.id|split('/')|last %}
+                {% set page_parent_id = page.id|split('/')|slice(0, -1)|join('/') %}
+                {% if page_name != "index" and page_parent_id == current_parent_id %}
+                    {% set subnav_items = subnav_items|merge([page]) %}
+                {% endif %}
+            {% endfor %} 
+        {% endif %}
+        {% if subnav_items|length > 0 %}
+        <div class="subnav">
+            <div class="container">
+                <div class="nav" role="region" tabindex="-1">
+                    <ul>
+                    {% for subnav_item in subnav_items %}
+                        {% set subnav_item_name = subnav_item.id|split('/')|last %}
+                        <li{% if subnav_item_name == current_page_name %} class="active" {% endif %}>
+                            <a href="{{ subnav_item.url }}">  {{ subnav_item.title }}</a> 
+                        </li>
+                    {% endfor %} 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endif %}
+
+    <div id="main">
+
+        {% for row_setting in meta.main %}
+        
+            {% if row_setting.type == "banner" %}
+            <div class="banner">
+                <input type="hidden" id="row_setting" value='{{ row_setting|json_encode() }}'/>
+                
+                {% if row_setting.link_url %}
+                <a href="{{ row_setting.link_url }}">
+                {% endif %}
+
+                    {% if row_setting.image %}
+                    <img src="{{ row_setting.image }}" alt="banner-image"/>
+                    {% endif %}
+                
+                {% if row_setting.link_url %}
+                </a>
+                {% endif %}
+
+            </div>
+            {% endif %}
+
+            {% if row_setting.type == "cards" %}
+            <div class="cards">
+                <div class="container">
+                    {% for card in row_setting.cards %}
+                    <div class="card">
+                        {% if card.image %}
+                        <img src="{{ card.image }}" alt="card-image"/>
+                        {% endif %}
+                        {% if card.title %}
+                        <div class = "title">
+                            <h2> {{ card.title }} </h2>
+                        </div>
+                        {% endif %}
+                        {% if card.slogan %}
+                        <div class = "slogan">
+                            {{ card.slogan }}
+                        </div>
+                        {% endif %}
+                        {% if card.link_url %}
+                        <div class = "link">
+                            <a href="{{ card.link_url|default("#") }}"> 
+                                {{ card.link_text|default('More') }} 
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+        {% endfor %} 
+
+        <br>
+        
+        {% if meta.h1 %} 
+        <div class="container">
+            <h1>{{ meta.h1 }}</h1>
+        </div>
+        {% endif %}
+
+        {% if meta.description %} 
+        <div class="container">
+            <div class="description">
+                {{ meta.description }}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if content != "" %}
+        <div class="container">
+            {{ content }}
+        </div>
+        {% endif %}
+    </div>
+
+    {% include '_footer.twig' %}
+
+    <script src="{{ theme_url }}/script/index-top.js" type="text/javascript"></script>
+
+</body>
+</html>

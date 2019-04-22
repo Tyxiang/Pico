@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    {% include '_head.twig' %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/autolist.css" type="text/css" />
+</head>
+<body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+
+    {% include '_header.twig' %}
+
+        <div id="main">
+
+            <div class="container">
+                <div class="list">
+                {% set current_page_name = current_page.id|split('/')|last %}
+                {% set current_parent_id = current_page.id|split('/')|slice(0, -1)|join('/') %}
+                {% for page in pages if page.title and not page.hidden %}
+                    {% set page_name = page.id|split('/')|last %}
+                    {% set page_parent_id = page.id|split('/')|slice(0, -1)|join('/') %}
+                    {% if page_name != "index" and page_parent_id == current_parent_id %}
+                        <div class="item">
+                            <h2>{{ page.title }}</h2>
+                            <p>{{ page.description }}</p>
+                            <p><a href="{{ page.url }}"> More ... </a></p>
+                        </div>
+                    {% endif %}
+                {% endfor %} 
+                </div>
+            </div>
+
+        </div>
+
+    {% include '_footer.twig' %}
+
+    <script src="{{ theme_url }}/script/autolist.js" type="text/javascript"></script>
+
+</body>
+</html>

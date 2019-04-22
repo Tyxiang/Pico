@@ -1,0 +1,35 @@
+:root{
+/*
+    --color-back:          hsl(0, 0%, 100%);
+
+    --color-base-brighter: hsl(219, 79%, 85%);
+    --color-base-bright:   hsl(219, 79%, 75%);
+    --color-base:          hsl(219, 79%, 65%);
+    --color-base-dark:     hsl(219, 79%, 55%);
+    --color-base-darker:   hsl(219, 79%, 45%);
+
+    --color-gray-brighter: hsl(0, 0%, 90%);
+    --color-gray-bright:   hsl(0, 0%, 70%);
+    --color-gray:          hsl(0, 0%, 50%);
+    --color-gray-dark:     hsl(0, 0%, 30%);
+    --color-gray-darker:   hsl(0, 0%, 10%);
+
+    --color-fore:          hsl(0, 0%, 0%); 
+*/
+
+    --color-back:          hsl(0, 0%, 100%);
+
+    --color-base-brighter: hsl(212, 76.7%, 75%);
+    --color-base-bright:   hsl(212, 76.7%, 65%);
+    --color-base:          hsl(212, 76.7%, 45.5%);
+    --color-base-dark:     hsl(212, 76.7%, 30%);
+    --color-base-darker:   hsl(212, 76.7%, 20%);
+
+    --color-gray-brighter: hsl(0, 0%, 90%);
+    --color-gray-bright:   hsl(0, 0%, 70%);
+    --color-gray:          hsl(0, 0%, 50%);
+    --color-gray-dark:     hsl(0, 0%, 30%);
+    --color-gray-darker:   hsl(0, 0%, 10%);
+
+    --color-fore:          hsl(0, 0%, 0%);
+}

@@ -1,7 +1,7 @@
 ##
 # Basic
 #
-site_title: 思博瑞                    # The title of your website
+site_title: Fimik                    # The title of your website
 base_url:                          # Pico will try to guess its base URL, if this fails, override it here
                                     #     Example: http://example.com/pico/
 rewrite_url: true                   # A boolean (true or false) indicating whether URL rewriting is forced
@@ -10,7 +10,7 @@ timezone: UTC                       # Your PHP installation might require you to
 ##
 # Theme
 #
-theme: spring                         # The name of your custom theme
+theme: fimik                         # The name of your custom theme
 theme_url: ~                        # Pico will try to guess the URL to the themes dir of your installation
                                     #     If this fails, override it here. Example: http://example.com/pico/themes/
 theme_config:
@@ -43,8 +43,8 @@ content_config:
 # Plugins
 #
 DummyPlugin.enabled: false          # Force the plugin "DummyPlugin" to be disabled
-PicoPluginElement.enabled: true 
-PicoPluginRedirect.enabled: true 
+PicoElement.enabled: true 
+PicoRedirect.enabled: true 
 
 ##
 # Custom
