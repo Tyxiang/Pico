@@ -3,24 +3,32 @@ title: 音乐魔方
 order: 10
 template: content
 h1: 音乐魔方 Music Cube
-navigate: header
-description: 随音乐节奏闪动的全彩魔方。
+# navigate: header
+description: 随音乐节奏闪动的全彩魔方。最简单的应用，涉及模拟信号（声音）采样、PWM输出、RGB三原色、数组、排序算法等知识。
 ---
+<!--pico-element centre-park-->
 
-## 零件表
+![main](%base_url%/images/main-music-cube.jpg)
+
+<!--pico-element-end-->
+
+<!--pico-element toc-->
+
+## 零件清单
 
 | 型号 | 名称            | 数量 | 说明           |
 |------|----------------|:----:|----------------|
 | P-01 | 方片           | 52    |               |
-| P-02 | 角连           | 36    |               |
+| P-02 | 角连           | 32    |               |
 | P-03 | 直连           | 58    |               |
-| P-04 | 三连           | 2     |               |
+| P-04 | 三连           | 6     |               |
 | P-09 | 支撑           | 2     |               |
 | U-01 | Micro USB 接口 | 1     |               |
 | M-03 | 声音传感器模块  | 1     |               |
 | M-04 | 全彩LED模块    | 1     |               |
+| C-01 | 连接线         | 1     |               |
 
-## 装配
+## 硬件装配
 
 Coming Soon ...
 
@@ -87,3 +95,5 @@ void loop() {
 }
 ```
 [代码下载](code/music-cube.ino)
+
+<!--pico-element-end-->

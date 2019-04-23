@@ -5,7 +5,7 @@ navigate: header
 template: content
 ---
 
-<!--pico-element card-2-->
+<!--pico-element card-3-->
 
 ## 硬件 Hardware
 
@@ -16,6 +16,10 @@ template: content
 - [模块 Module](#)
 - [主板 Board](#)
 
+<!--pico-element-end-->
+
+<!--pico-element card-3-->
+
 ## 软件 Software
 
 ![Software](images/software.png)
@@ -24,6 +28,10 @@ template: content
 - MicroPython
 - Lua
 - JoshOS
+
+<!--pico-element-end-->
+
+<!--pico-element card-3-->
 
 ## 云服务 Cloud Service
 
@@ -36,7 +44,7 @@ template: content
 
 <!--pico-element-end-->
 
-<!--pico-element card-2-->
+<!--pico-element card-1-->
 
 ## 套件 Kits
 
@@ -68,21 +76,6 @@ template: content
 - 元器件测试仪 Component Tester
 - 移动可调电源 Mobile Adjustable Power Supply
 - 信号发生器 Signal Generator
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 
 <!--pico-element-end-->
 

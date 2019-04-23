@@ -3,7 +3,7 @@
     padding: 0 0.5rem;
     margin: 0 auto 3rem auto;
     text-align: center;
-    font-style: italic;
+    /* font-style: italic; */
 }
 /*** TYPOGRAPHY ***/
 p, td, th, li, dd {

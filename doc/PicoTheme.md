@@ -45,7 +45,6 @@ This is the default template. If there is no template be specified, this templat
 - With the `order: nn` option to control the sorting in the navigation bar.
 - With the `h1: XXX` option, you can add H1 heading to this page.
 - With the `description: xxx` option, you can add a description to this page.
-- ~~With the `subnav: true` option, you can enable the sub-navigation function. The other page in the folder where the current page is located will be displayed in the sub-navigation bar.~~
 - With the `main:` option, you can add banners and cards for this page. Details are below.
 
 ### index

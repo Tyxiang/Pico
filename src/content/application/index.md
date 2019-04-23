@@ -5,7 +5,7 @@ navigate: header
 template: content
 ---
 
-<!--pico-element card-2-->
+<!--pico-element card-1-->
 
 ## 应用教程 Tutorial
 - [快速入门 Getting Started](#)
@@ -26,7 +26,7 @@ template: content
 
 <!--pico-element-end-->
 
-<!--pico-element card-2-->
+<!--pico-element card-1-->
 
 ## 在线工具 Online Tools
 - [机壳结构设计工具](#)
