@@ -35,20 +35,20 @@ You can change the color scheme of the site to yours, by changing the color valu
 
 ## Template
 
-### Index (Default)
+### content (Default)
 
 This is the default template. If there is no template be specified, this template will be applied. Usually used for home page and content pages.
 
 - With the `template: index` option to apply the template to this page.
-- With the `navigate: header` option to show this page on header navigation bar.
+- With the `navigate: header` option to show this page on header navigation bar. If the md file with `navigate: header` is in a sub folder, the sub-navigation bar will be show.
 - With the `navigate: footer` option to show this page on footer navigation bar.
 - With the `order: nn` option to control the sorting in the navigation bar.
 - With the `h1: XXX` option, you can add H1 heading to this page.
 - With the `description: xxx` option, you can add a description to this page.
-- With the `subnav: true` option, you can enable the sub-navigation function. The other page in the folder where the current page is located will be displayed in the sub-navigation bar.
+- ~~With the `subnav: true` option, you can enable the sub-navigation function. The other page in the folder where the current page is located will be displayed in the sub-navigation bar.~~
 - With the `main:` option, you can add banners and cards for this page. Details are below.
 
-### AutoList
+### index
 
 The page applied this template will become a list page showing all the files in the folder where the autolist page is located. Usually used for `index.md` in folder, so that the folder can list it's pages automatically. 
 
