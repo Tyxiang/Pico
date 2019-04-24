@@ -37,10 +37,11 @@ template: content
 
 ![service](images/service.png)
 
-- 虚拟寄存器 Virtual Register
 - 状态映射 State Mapping
 - 历史记录 History Record
 - 逻辑引擎 Logical Engine
+<br>
+<br>
 
 <!--pico-element-end-->
 
@@ -50,14 +51,14 @@ template: content
 
 物联网设备 IoT Device
 
-- [温湿度传感器](#)
-- [PM2.5传感器](#)
-- [VoC在线监测仪](#)
+- 温湿度传感器
+- PM2.5传感器
+- VOC在线监测仪
 
 智能设备 Smart Thing
 
 - [音乐魔方 Music Cube](product/music-cube)
-- [Wifi电子钟 Wifi Electronic Clock](#)
+- Wifi电子钟 Wifi Electronic Clock
 
 耳放功放 Amplifier
 
