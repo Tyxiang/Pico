@@ -94,6 +94,6 @@ void loop() {
   Serial.println();
 }
 ```
-[代码下载](code/music-cube.ino)
+[代码下载](%base_url%/code/music-cube-v1.01.ino)
 
 <!--pico-element-end-->
