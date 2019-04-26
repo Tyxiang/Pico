@@ -35,7 +35,7 @@ You can change the color scheme of the site to yours, by changing the color valu
 
 ## Template
 
-### content (Default)
+### content
 
 This is the default template. If there is no template be specified, this template will be applied. Usually used for home page and content pages.
 
@@ -47,7 +47,7 @@ This is the default template. If there is no template be specified, this templat
 - With the `description: xxx` option, you can add a description to this page.
 - With the `main:` option, you can add banners and cards for this page. Details are below.
 
-### index
+### autolist
 
 The page applied this template will become a list page showing all the files in the folder where the autolist page is located. Usually used for `index.md` in folder, so that the folder can list it's pages automatically. 
 
